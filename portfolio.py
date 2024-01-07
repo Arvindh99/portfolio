@@ -4,7 +4,7 @@ import streamlit as st
 from PIL import Image, ImageDraw
 import base64
 
-image = Image.open("C:/Users/User/Desktop/Arvindh/Passport_Photograph.jpg")
+image = Image.open("Assets/Passport_Photograph.jpg")
 height,width = image.size 
 lum_img = Image.new('L', [height,width] , 0) 
 draw = ImageDraw.Draw(lum_img) 
@@ -149,7 +149,7 @@ a poignant reminder of the unprecedented times we faced.""")
                                 st.write(":blue[Thermometer Chart:] Shows the Active Cases.")
                                 st.write(":blue[Shaded curve line Chart:] Month wise confirmed cases.")
                                 st.write("Slicers are also added to know the country wise metrics")
-                                projimg1 = Image.open("C:/Users/User/Desktop/Arvindh/Excel-Power BI/COVID_Dashboard.png")
+                                projimg1 = Image.open("Assets/COVID_Dashboard.png")
                                 st.image(projimg1)
                                 col1, col2, col3 = st.columns(3,gap="large")
                                 with col2:
@@ -177,7 +177,7 @@ with tab3:
 
 
 with tab4:
-        with open("C:/Users/User/Desktop/Arvindh/Arvindh_Resume_v1.0.pdf", "rb") as pdf_file:
+        with open("Assets/Arvindh_Resume_v1.0.pdf", "rb") as pdf_file:
                 PDFbyte = pdf_file.read()
                 
         st.download_button(label="Download Resume",
@@ -193,7 +193,7 @@ with tab4:
 
                 st.markdown(pdf_display, unsafe_allow_html=True)
         
-        file = "C:/Users/User/Desktop/Arvindh/Arvindh_Resume_v1.0.pdf"
+        file = "Assets/Arvindh_Resume_v1.0.pdf"
         displayPDF(file)
 
 
