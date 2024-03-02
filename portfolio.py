@@ -177,7 +177,7 @@ with tab3:
 
 
 with tab4:
-        with open("Assets/Arvindh_Resume_v1.0.pdf", "rb") as pdf_file:
+        with open("Assets/Arvindh Resume.pdf", "rb") as pdf_file:
                 PDFbyte = pdf_file.read()
                 
         st.download_button(label="Download Resume",
