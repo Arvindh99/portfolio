@@ -193,7 +193,7 @@ with tab4:
 
                 st.markdown(pdf_display, unsafe_allow_html=True)
         
-        file = "Assets/Arvindh_Resume_v1.0.pdf"
+        file = "Assets/Arvindh Resume.pdf"
         displayPDF(file)
 
 
