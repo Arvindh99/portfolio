@@ -184,7 +184,8 @@ with tab4:
                     data=PDFbyte,
                     file_name="resume.pdf",
                     mime='application/octet-stream')
-        
+
+        @st.cache_data
         def displayPDF(file):
                 with open(file, "rb") as f:
                         base64_pdf = base64.b64encode(f.read()).decode('utf-8')
