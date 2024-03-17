@@ -86,17 +86,8 @@ regarding the predicted disease. Using a classification model, diseases have bee
                                         col1, col2, col3 = st.columns(3,gap="large")
                                         with col2:
                                                 st.link_button("VIEW PROJECT", "https://github.com/Arvindh99/Disease_Speciality_Recommendation/tree/main")
-
-                        with st.expander("Project 2: :orange[Predict the winner of the IPL Cricket Match]"):
-                                with st.container(border=True):
-                                        st.write("""This project focuses on predicting the winner of IPL cricket matches based on teams, toss winner, toss decision, and venues.""")
-                                        st.caption("Model Performance:")
-                                        st.write("""The Random Forest model achieved an accuracy of 85.90%""")
-                                        col1, col2, col3 = st.columns(3,gap="large")
-                                        with col2:
-                                                st.link_button("VIEW PROJECT", "https://github.com/Arvindh99/IPL-Match-Prediction/tree/main")
                         
-                        with st.expander("Project 3: :orange[Medical Cost Insurance using Simple Linear Regression]"):
+                        with st.expander("Project 2: :orange[Medical Cost Insurance using Simple Linear Regression]"):
                                 with st.container(border=True):
                                         st.write("""The objective of this project is to build a simple linear regression model that can predict the 
 total expenses based on the given features. This model can be useful for estimating the costs for medical treatment and insurance purposes.
@@ -107,7 +98,7 @@ The features includes age, BMI, sex, number of children, smoker status, region o
                                         with col2:
                                                 st.link_button("VIEW PROJECT", "https://github.com/Arvindh99/Medical-Cost-Insurance---Simple-Linear-Regression")
 
-                        with st.expander("Project 4: :orange[Predicting Disease based on the patient characteristics and symptoms]"):
+                        with st.expander("Project 3: :orange[Predicting Disease based on the patient characteristics and symptoms]"):
                                 with st.container(border=True):
                                         st.write("""This project provides valuable insights into the relationship between symptoms, 
 patient characteristics, and disease outcomes. EDA (Exploratory Data Analysis) and classification algorithms were performed on the dataset. """)
@@ -135,6 +126,17 @@ information of patients' health records. This web application allows users to cr
                                                 st.link_button("VIEW PROJECT", "https://github.com/Arvindh99/Elecronic-Health-Record?tab=readme-ov-file")
                                         with col4:
                                                 st.link_button("WEB APP","https://share.streamlit.io/arvindh99/elecronic-health-record/main/ehr.py")
+
+                        with st.expander("Project 2: :orange[Predict the winner of the IPL Cricket Match]"):
+                                with st.container(border=True):
+                                        st.write("""This project focuses on predicting the winner of IPL cricket matches based on teams, toss winner, toss decision, and venues.""")
+                                        st.caption("Model Performance:")
+                                        st.write("""The Random Forest model achieved an accuracy of 85.90%""")
+                                        col1, col2, col3, col4 = st.columns(4,gap="medium")
+                                        with col1:
+                                                st.link_button("VIEW PROJECT", "https://github.com/Arvindh99/IPL-Match-Prediction/tree/main")
+                                        with col4:
+                                                st.link_button("WEB APP","https://arvindh99-ipl-match-predicting-web-app-ipl-pred-dmnrqy.streamlit.app/")
 
 
 
