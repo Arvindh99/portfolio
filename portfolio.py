@@ -42,6 +42,10 @@ with tab1:
         ml_exp.text("""Decision Tree, Random Forest, KNN, Logistic Regression,Linear Regression,
 Navie Bayes, Gradient Boost, LightGBM, SVM.""")
 
+        dl_exp = st.expander("**Deep Learning Methods**")
+        dl_exp.caption("*Known Algorithms:*")
+        dl_exp.text("""ANN, CNN, RNN.""")
+
         excel_exp = st.expander("**Microsoft Excel**")
         excel_exp.caption("*Known Skills:*")
         excel_exp.text("""VLOOKUP, Pivot Tables, Conditional Formatting, COUNTIF, Filters, Charts, SUMIF,
@@ -72,6 +76,7 @@ with tab2:
         if proj == "Python Projects":
                 ml_proj = st.checkbox('ML PROJECTS')
                 st_proj = st.checkbox('STREAMLIT PROJECTS')
+                dl_proj = st.checkbox('DEEP LEARNING PROJECTS')
                 if ml_proj:
                         with st.expander("Project 1: :orange[Predicting Disease based on the Symptoms and identifying specialist based on predicted disease]"):
                                 with st.container(border=True):
@@ -137,6 +142,17 @@ information of patients' health records. This web application allows users to cr
                                                 st.link_button("VIEW PROJECT", "https://github.com/Arvindh99/IPL-Match-Prediction/tree/main")
                                         with col4:
                                                 st.link_button("WEB APP","https://arvindh99-ipl-match-predicting-web-app-ipl-pred-dmnrqy.streamlit.app/")
+                st.divider()
+                if dl_proj:
+                        with st.expander("Project 1: :orange[Bank Customer Churn Prediction using ANN]"):
+                                with st.container(border=True):
+                                        st.write("""The objective of this project is to build a ANN model that can predict the 
+whether the customer will churn or not.""")
+                                        st.caption("Model Performance:")
+                                        st.write("The ANN model achieved an accuracy of 86.1%.")
+                                        col1, col2, col3 = st.columns(3,gap="large")
+                                        with col2:
+                                                st.link_button("VIEW PROJECT", "https://github.com/Arvindh99/ANN-Bank-Churn-Dataset/tree/main")
 
 
 
