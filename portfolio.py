@@ -115,7 +115,7 @@ used to make predictions on new patient profiles and assist in disease diagnosis
                                         col1, col2, col3 = st.columns(3,gap="large")
                                         with col2:
                                                 st.link_button("VIEW PROJECT", "https://github.com/Arvindh99/Disease-Symptoms-EDA-ML")
-                st.divider()
+                
                 if st_proj:
                         with st.expander("Project 1: :orange[Electronic Health Record (EHR) Web Application]"):
                                 with st.container(border=True):
@@ -143,7 +143,7 @@ information of patients' health records. This web application allows users to cr
                                                 st.link_button("VIEW PROJECT", "https://github.com/Arvindh99/IPL-Match-Prediction/tree/main")
                                         with col4:
                                                 st.link_button("WEB APP","https://arvindh99-ipl-match-predicting-web-app-ipl-pred-dmnrqy.streamlit.app/")
-                st.divider()
+                
                 if dl_proj:
                         with st.expander("Project 1: :orange[Bank Customer Churn Prediction using ANN]"):
                                 with st.container(border=True):
