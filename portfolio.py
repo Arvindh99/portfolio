@@ -77,6 +77,7 @@ with tab2:
                 ml_proj = st.checkbox('ML PROJECTS')
                 st_proj = st.checkbox('STREAMLIT PROJECTS')
                 dl_proj = st.checkbox('DEEP LEARNING PROJECTS')
+                st.divider()
                 if ml_proj:
                         with st.expander("Project 1: :orange[Predicting Disease based on the Symptoms and identifying specialist based on predicted disease]"):
                                 with st.container(border=True):
