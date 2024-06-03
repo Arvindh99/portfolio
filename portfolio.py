@@ -4,7 +4,7 @@ import streamlit as st
 from PIL import Image, ImageDraw
 import base64
 
-image = Image.open("Assets/Passport_Photograph.jpg")
+image = Image.open("Assets/Passport_Photograph.jpeg")
 height,width = image.size 
 lum_img = Image.new('L', [height,width] , 0) 
 draw = ImageDraw.Draw(lum_img) 
