@@ -25,7 +25,7 @@ tab1, tab2, tab3, tab4 = st.tabs(["ABOUT", "PROJECTS", "CERTIFICATIONS", "RESUME
 
 with tab1:
         st.header("An Inspiring Data Analyst")
-        st.markdown("""**Having a Masters degree in Health Data Science and have over 2.5 years of work experience**
+        st.markdown("""**Having a Masters degree in Health Data Science and have over 3 years of work experience**
         with a strong foundation in :orange[***Python, Machine Learning, SQL, Tableau, Power BI, and Excel***]. 
                 My journey in the world of data is marked by a relentless pursuit 
                 of unlocking actionable insights that fuel business growth.""")
