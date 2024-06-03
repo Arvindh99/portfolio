@@ -3,6 +3,7 @@ import numpy as np
 import streamlit as st
 from PIL import Image, ImageDraw
 import base64
+from streamlit_pdf_viewer import pdf_viewer
 
 image = Image.open("Assets/Passport_Photograph.jpeg")
 height,width = image.size 
@@ -206,17 +207,8 @@ with tab4:
                     file_name="resume.pdf",
                     mime='application/octet-stream')
 
-        @st.cache_data
-        def displayPDF(file):
-                with open(file, "rb") as f:
-                        base64_pdf = base64.b64encode(f.read()).decode('utf-8')
-
-                pdf_display = F'<iframe src="data:application/pdf;base64,{base64_pdf}" width="700" height="1200" type="application/pdf"></iframe>'
-
-                st.markdown(pdf_display, unsafe_allow_html=True)
+        pdf_viewer("Assets/Arvindh Resume.pdf")
         
-        file = "Assets/Arvindh Resume.pdf"
-        displayPDF(file)
 
 
         
