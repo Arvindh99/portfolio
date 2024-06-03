@@ -21,4 +21,4 @@ This repository contains my interactive personal portfolio built using Python St
 - Assets (folder for images used in the portfolio)
 - requirements.txt (text file contains the used python packages in the application)
 
-Check out here: [Portfolio](https://portfolio-cv-jd2w.onrender.com)
+Check out here: [Portfolio](https://arvindh-portfolio.streamlit.app/)
